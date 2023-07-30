@@ -42,7 +42,7 @@
 # Домашнє завдання 2
 
 Подивися пояснююче відео як це зробити та здавати ДЗ правильно:
-[![Title](./js.png)](https://www.youtube.com/watch?v=wabSW_sz_cM ' пояснення')
+[![Title](./assets/js.png)](https://www.youtube.com/watch?v=wabSW_sz_cM ' пояснення')
 
 Написати REST API для роботи з колекцією контактів. Для роботи з REST API
 використовуй [Postman] (https://www.getpostman.com/).
