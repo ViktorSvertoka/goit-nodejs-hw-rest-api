@@ -21,7 +21,7 @@ router.delete('/:id', isValidId, ctrl.removeContact);
 
 router.put(
   '/:id',
-  checkValid,
+  isValidId,
   checkBody,
   validateBody(schemas.addSchema),
   ctrl.updateContact
