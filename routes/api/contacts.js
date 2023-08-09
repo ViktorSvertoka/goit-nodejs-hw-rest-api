@@ -5,7 +5,6 @@ const ctrl = require('../../controllers/contacts');
 const validateBody = require('../../middlewares/validateBody');
 const checkBody = require('../../middlewares/checkBody');
 const isValidId = require('../../middlewares/isValidId');
-const checkValid = require('../../middlewares/checkValid');
 
 const schemas = require('../../models/contact');
 
