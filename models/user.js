@@ -38,7 +38,7 @@ const userSchema = new Schema(
 userSchema.post('save', handleMongooseError);
 
 const registerSchema = Joi.object({
-  email: Joi.string().pattern(emailRegex).required().messages({
+  email: Joi.string().pattern(new RegExp(emailRegex)).required().messages({
     'any.required': `Missing required email field`,
   }),
 
@@ -48,7 +48,7 @@ const registerSchema = Joi.object({
 });
 
 const loginSchema = Joi.object({
-  email: Joi.string().pattern(emailRegex).required().messages({
+  email: Joi.string().pattern(new RegExp(emailRegex)).required().messages({
     'any.required': `Missing required email field`,
   }),
 
@@ -57,7 +57,7 @@ const loginSchema = Joi.object({
   }),
 });
 
-const schema = {
+const schemas = {
   registerSchema,
   loginSchema,
 };
@@ -66,5 +66,5 @@ const User = model('user', userSchema);
 
 module.exports = {
   User,
-  schema,
+  schemas,
 };

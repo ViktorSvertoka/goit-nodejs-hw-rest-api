@@ -6,7 +6,7 @@ const validateBody = require('../../middlewares/validateBody');
 const checkBody = require('../../middlewares/checkBody');
 const authenticate = require('../../middlewares/authenticate');
 
-const schemas = require('../../models/user');
+const { schemas } = require('../../models/user');
 
 const router = express.Router();
 
