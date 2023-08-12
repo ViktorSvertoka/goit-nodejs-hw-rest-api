@@ -19,7 +19,7 @@ router.post(
 
 router.post('/login', checkBody, validateBody(schemas.loginSchema), ctrl.login);
 
-router.post('/current', authenticate, ctrl.current);
+router.get('/current', authenticate, ctrl.current);
 
 router.post('/logout', authenticate, ctrl.logout);
 
