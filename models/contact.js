@@ -4,8 +4,8 @@ const Joi = require('joi');
 
 const handleMongooseError = require('../helpers/handleMongooseError');
 
-const nameRegex = /^[a-zA-Z\s-]+$/;
-const phoneRegex = /^\+?[0-9\s-]+$/;
+const nameRegex = '^[A-Z][a-z]+ [A-Z][a-z]+$';
+const phoneRegex = '^[0-9]{3}-[0-9]{3}-[0-9]{4}$';
 
 const contactSchema = new Schema(
   {
