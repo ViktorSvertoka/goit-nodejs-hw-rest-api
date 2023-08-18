@@ -797,3 +797,12 @@ ResponseBody: {
 ## Додаткове завдання - необов'язкове
 
 ### 1. Напишіть dockerfile для вашої програми
+
+<!-- docker build . -->
+<!-- docker images -->
+<!-- docker run + id -->
+<!-- docker ps -->
+<!-- docker stop + id -->
+<!-- docker start + id -->
+
+yarn add @sendgrid/mail
